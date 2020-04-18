@@ -18,8 +18,8 @@ import java.net.URL;
 public class ScriptBase {
     public static WebDriver driver;
     public static final Logger log=Logger.getLogger(ScriptBase.class.getName());
-    public static final String USERNAME="muhammad30";
-    public static final String ACCESS_KEY="ac8ec834-1216-4aae-8fcd-bb978529d23d";
+    public static final String USERNAME="khanjada";
+    public static final String ACCESS_KEY="fa3f2c3c-5736-4e96-849b-1d691b85d0d6";
     public static final String URL="https://"+USERNAME+":"+ACCESS_KEY+"@ondemand.saucelabs.com:443/wd/hub";
     public static ExtentReports extent;
     public WebDriverWait wait;
@@ -48,7 +48,7 @@ public class ScriptBase {
             caps.setCapability("browserName","chrome");
             caps.setCapability("platform","macOS 10.13");
             caps.setCapability("version","latest");
-            caps.setCapability("tunnel-identifier","futureItVision");
+            //caps.setCapability("tunnel-identifier","futureItVision");
             driver=new RemoteWebDriver(new URL(URL),caps);
         }
         driver.get("http://automationpractice.com/index.php");
