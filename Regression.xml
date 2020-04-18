@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" >
+    <listeners>
+        <listener class-name="listNew.ExtentListiner"></listener>
+    </listeners>
+
+    <test name="SeleniumForBeginners1" >
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="cataloguePage.cataloguePageTest">
+                <methods>
+                    <include name="verifyWomenCatalogeTabDisplay"/>
+                </methods>
+            </class>
+            <!-- <class name="cartPage.CartPageTest">
+                 <methods>
+                     <include name="verifyBlouseAddCartwithQuantity"/>
+                     <include name="verifySleeveAddCartwithQuantitytwo"/>
+                 </methods>
+             </class>
+             <class name="contactPage.ContactPageTest">
+                 <methods>
+                     <include name="verifyValidContactPageCreate"/>
+                 </methods>
+             </class>-->
+        </classes>
+    </test>
+
+</suite><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="/Users/hurayra/Documents/Workspace/SeleniumForJenkinsSaucelab/pom.xml"><classes/></test></suite>
